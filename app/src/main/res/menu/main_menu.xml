@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+            android:id="@+id/menu_csb_pos"
+            android:title="CSB-Pos"
+            app:showAsAction="ifRoom"
+            android:orderInCategory="1">
+        <menu>
+            <item
+                    android:id="@+id/menu_vtr_c"
+                    android:title="VTR" />
+            <item
+                    android:id="@+id/menu_vbr_c"
+                    android:title="VBR" />
+            <item
+                    android:id="@+id/menu_vtl_c"
+                    android:title="VTL" />
+            <item
+                    android:id="@+id/menu_vbl_c"
+                    android:title="VBL" />
+            <item
+                    android:id="@+id/menu_htr_c"
+                    android:title="HTR" />
+            <item
+                    android:id="@+id/menu_hbr_c"
+                    android:title="HBR" />
+            <item
+                    android:id="@+id/menu_htl_c"
+                    android:title="HTL" />
+            <item
+                    android:id="@+id/menu_hbl_c"
+                    android:title="HBL" />
+        </menu>
+    </item>
+
+    <item
+            android:id="@+id/menu_bb_pos"
+            android:title="BB-Pos"
+            app:showAsAction="ifRoom"
+            android:orderInCategory="1">
+        <menu>
+            <item
+                    android:id="@+id/menu_vtr_b"
+                    android:title="VTR" />
+            <item
+                    android:id="@+id/menu_vbr_b"
+                    android:title="VBR" />
+            <item
+                    android:id="@+id/menu_vtl_b"
+                    android:title="VTL" />
+            <item
+                    android:id="@+id/menu_vbl_b"
+                    android:title="VBL" />
+            <item
+                    android:id="@+id/menu_htr_b"
+                    android:title="HTR" />
+            <item
+                    android:id="@+id/menu_hbr_b"
+                    android:title="HBR" />
+            <item
+                    android:id="@+id/menu_htl_b"
+                    android:title="HTL" />
+            <item
+                    android:id="@+id/menu_hbl_b"
+                    android:title="HBL" />
+        </menu>
+    </item>
+</menu>

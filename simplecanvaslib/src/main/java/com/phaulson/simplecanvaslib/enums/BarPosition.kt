@@ -1,0 +1,12 @@
+package com.phaulson.simplecanvaslib.enums
+
+enum class BarPosition {
+    VERTICAL_TOP_RIGHT,
+    VERTICAL_BOTTOM_RIGHT,
+    VERTICAL_TOP_LEFT,
+    VERTICAL_BOTTOM_LEFT,
+    HORIZONTAL_TOP_RIGHT,
+    HORIZONTAL_TOP_LEFT,
+    HORIZONTAL_BOTTOM_RIGHT,
+    HORIZONTAL_BOTTOM_LEFT
+}

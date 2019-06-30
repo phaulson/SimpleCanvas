@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="simple_canvas">
+        <attr name="image_src" format="reference"/>
+        <attr name="stroke_color" format="color"/>
+        <attr name="stroke_width" format="float"/>
+        <attr name="bg_color" format="color"/>
+
+        <attr name="adjust_stroke_width_on_pinch" format="boolean"/>
+        <attr name="show_color_seek_bar" format="boolean"/>
+        <attr name="show_undo_button" format="boolean"/>
+        <attr name="show_clear_button" format="boolean"/>
+        <attr name="show_drawing_erasing_toggle" format="boolean"/>
+        <attr name="show_erasing_mark" format="boolean"/>
+
+        <attr name="undo_button_color" format="color"/>
+        <attr name="clear_button_color" format="color"/>
+        <attr name="drawing_erasing_toggle_color" format="color"/>
+        <attr name="color_seek_bar_colors" format="reference" />
+
+        <attr name="hide_color_seek_bar_on_touch" format="boolean" />
+        <attr name="hide_button_bar_on_touch" format="boolean" />
+
+        <attr name="color_seek_bar_position" format="enum">
+            <enum name="VERTICAL_TOP_RIGHT" value="0"/>
+            <enum name="VERTICAL_BOTTOM_RIGHT" value="1"/>
+            <enum name="VERTICAL_TOP_LEFT" value="2"/>
+            <enum name="VERTICAL_BOTTOM_LEFT" value="3"/>
+            <enum name="HORIZONTAL_TOP_RIGHT" value="4"/>
+            <enum name="HORIZONTAL_BOTTOM_RIGHT" value="5"/>
+            <enum name="HORIZONTAL_TOP_LEFT" value="6"/>
+            <enum name="HORIZONTAL_BOTTOM_LEFT" value="7"/>
+        </attr>
+
+        <attr name="button_bar_position" format="enum">
+            <enum name="VERTICAL_TOP_RIGHT" value="0"/>
+            <enum name="VERTICAL_BOTTOM_RIGHT" value="1"/>
+            <enum name="VERTICAL_TOP_LEFT" value="2"/>
+            <enum name="VERTICAL_BOTTOM_LEFT" value="3"/>
+            <enum name="HORIZONTAL_TOP_RIGHT" value="4"/>
+            <enum name="HORIZONTAL_BOTTOM_RIGHT" value="5"/>
+            <enum name="HORIZONTAL_TOP_LEFT" value="6"/>
+            <enum name="HORIZONTAL_BOTTOM_LEFT" value="7"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="ColorSeekBar">
+        <attr name="colorSeeds" format="reference" />
+        <attr name="barHeight" format="dimension" />
+        <attr name="thumbHeight" format="dimension" />
+        <attr name="showAlphaBar" format="boolean" />
+        <attr name="alphaBarPosition" format="integer" />
+        <attr name="colorBarPosition" format="integer" />
+        <attr name="bgColor" format="color"/>
+        <attr name="barMargin" format="dimension"/>
+        <attr name="maxPosition" format="integer"/>
+        <attr name="isVertical" format="boolean"/>
+    </declare-styleable>
+</resources>
