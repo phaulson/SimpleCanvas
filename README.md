@@ -51,11 +51,11 @@ Step 2. Add the dependency:
         android:layout_height="match_parent"/>
 ```
 
-### XML-Attributes
-|attr|format|default|description|
+### XML Attributes
+|attribute|format|default|description|
 |---|---|---|---|
 |`app:image_src`|reference|0|resource of background image|
-|`app:stroke_color`|color|determined by color seek bar|drawing color|
+|`app:stroke_color`|color|-1 (determined by color seek bar)|drawing color|
 |`app:stroke_width`|float|50F|width of drawn line|
 |`app:bg_color`|color|0|background color|
 |`app:color_seek_bar_colors`|reference|material design 500|resource array for color seek bar|
@@ -73,3 +73,26 @@ Step 2. Add the dependency:
 |`app:color_seek_bar_position`|enum|VERTICAL_TOP_RIGHT|position of color seek bar|
 |`app:button_bar_position`|enum|HORIZONTAL_TOP_RIGHT|position of buttons|
 
+### Kotlin Properties
+|property|type|access|description|
+|---|---|---|---|
+|`pathCount`|Int|GET|number of lines on canvas|
+|`paths`|Map<Path, Paint>|GET|collection of lines on canvas|
+|`imageSrc`|Int|GET/SET|resource of background image|
+|`strokeColor`|Int|GET/SET|drawing color|
+|`strokeWidth`|Float|GET/SET|width of drawn line|
+|`bgColor`|Int|GET/SET|background color|
+|`adjustStrokeWidthOnPinch`|Boolean|GET/SET|enable change of stroke width on pinch gesture|
+|`showColorSeekBar`|Boolean|GET/SET|show color seek bar|
+|`showUndoButton`|Boolean|GET/SET|show undo button|
+|`showClearButton`|Boolean|GET/SET|show clear button|
+|`showDrawingErasingToggle`|Boolean|GET/SET|show drawing/erasing button|
+|`showErasingMark`|Boolean|GET/SET|show aim of eraser|
+|`undoButtonColor`|Int|GET/SET|background color of undo button|
+|`clearButtonColor`|Int|GET/SET|background color of clear button|
+|`drawingErasingToggleColor`|Int|GET/SET|background color of drawing/erasing button|
+|`hideColorSeekBarOnTouch`|Boolean|GET/SET|hide color seek bar when drawing|
+|`hideButtonBarOnTouch`|Boolean|GET/SET|hide buttons when drawing|
+|`colorSeekBarPosition`|BarPosition|GET/SET|position of color seek bar|
+|`buttonBarPosition`|BarPosition|GET/SET|position of buttons|
+|`drawState`|DrawState|GET/SET|switch between drawing and erasing|
