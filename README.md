@@ -2,8 +2,8 @@
 a highly customizable snapchat like canvas 👻
 
 ## Examples
-![screenshot1](/screenshot/screenshot1.gif "Screenshot 1")
-![screenshot2](/screenshot/screenshot2.gif "Screenshot 2")
+<img src="screenshot/screenshot1.gif" width="250">
+<img src="screenshot/screenshot2.gif" width="250">
 
 ## Quick Start
 <a href="https://jitpack.io/#phaulson/SimpleCanvas">![Release](https://jitpack.io/v/phaulson/SimpleCanvas.svg)</a>
