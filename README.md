@@ -60,7 +60,7 @@ Step 2. Add the dependency:
 ```
 
 ### Kotlin (examples)
-For a detailed description see [me](##Kotlin-Properties)
+For a detailed description see [Kotlin Properties](#Kotlin Properties) and [Public Methods](#Public Methods)
 ```Kotlin
 simpleCanvas.drawState = DrawState.Erasing                      // set drawing mode to erasing
 simpleCanvas.drawState = DrawState.Drawing                      // set drawing mode back to drawing
@@ -73,7 +73,7 @@ simpleCanvas.undo()                                             // undo last act
 simplecanvas.clear()                                            // clear canvas
 ```
 
-### XML-Attributes
+### XML Attributes
 |attribute|format|default|description|
 |---|---|---|---|
 |`app:image_src`|reference|0|resource of background image|
@@ -95,7 +95,7 @@ simplecanvas.clear()                                            // clear canvas
 |`app:color_seek_bar_position`|enum|VERTICAL_TOP_RIGHT|position of color seek bar|
 |`app:button_bar_position`|enum|HORIZONTAL_TOP_RIGHT|position of buttons|
 
-### Kotlin-Properties
+### Kotlin Properties
 |property|type|access|description|
 |---|---|---|---|
 |`pathCount`|Int|GET|number of lines on canvas|
