@@ -60,7 +60,7 @@ Step 2. Add the dependency:
 ```
 
 ### Kotlin (examples)
-For a detailed description see [Kotlin Properties](#Kotlin Properties) and [Public Methods](#Public Methods)
+For a detailed description see [Kotlin Properties](#Kotlin-Properties) and [Public Methods](#Public-Methods)
 ```Kotlin
 simpleCanvas.drawState = DrawState.Erasing                      // set drawing mode to erasing
 simpleCanvas.drawState = DrawState.Drawing                      // set drawing mode back to drawing
