@@ -55,7 +55,7 @@ Step 2. Add the dependency:
 |attribute|format|default|description|
 |---|---|---|---|
 |`app:image_src`|reference|0|resource of background image|
-|`app:stroke_color`|color|-1 (determined by color seek bar)|drawing color|
+|`app:stroke_color`|color|-1<br/>determined by color seek bar|drawing color|
 |`app:stroke_width`|float|50F|width of drawn line|
 |`app:bg_color`|color|0|background color|
 |`app:color_seek_bar_colors`|reference|material design 500|resource array for color seek bar|
@@ -96,3 +96,13 @@ Step 2. Add the dependency:
 |`colorSeekBarPosition`|BarPosition|GET/SET|position of color seek bar|
 |`buttonBarPosition`|BarPosition|GET/SET|position of buttons|
 |`drawState`|DrawState|GET/SET|switch between drawing and erasing|
+
+### Public Methods
+|method|description|
+|---|---|
+|`undo()`|undo last action|
+|`clear()`|clear canvas|
+|`drawPath(path: Path, paint: Paint, considerWhenUndo: Boolean = true`)|draw path to canvas<br/>specify if it is considered when calling undo()|
+|`drawCircle(x: Float, y: Float, radius: Float, paint: Paint, considerWhenUndo: Boolean = true)`|draw circle to canvas|
+|`erasePath(index: Int)`|erase path at given index|
+|`setColorSeekBarColors(res: Int/IntArray)`|set new resource of colors to color seek bar|
