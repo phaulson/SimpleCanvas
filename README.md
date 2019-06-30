@@ -41,6 +41,14 @@ Step 2. Add the dependency:
 </dependency>
 ```
 
+## Features
+* simple drawing and erasing on a blank background or image
+* color seek bar to pick a color
+* pinch gesture to change stroke width
+* buttons to undo, clear and toggle drawing/erasing
+* highly customizable
+* adding text is **NOT** supported yet
+
 ##  Usage
 
 ### XML
@@ -51,7 +59,21 @@ Step 2. Add the dependency:
         android:layout_height="match_parent"/>
 ```
 
-### XML Attributes
+### Kotlin (examples)
+For a detailed description see [me](##Kotlin-Properties)
+```Kotlin
+simpleCanvas.drawState = DrawState.Erasing                      // set drawing mode to erasing
+simpleCanvas.drawState = DrawState.Drawing                      // set drawing mode back to drawing
+simpleCanvas.strokeColor = Color.Black                          // set stroke color
+simpleCanvas.strokeWidth = 100F                                 // set stroke width
+simpleCanvas.imageSrc = R.drawable.tree                         // set resource of background image
+simpleCanvas.showColorSeekBar = false                           // hide color seek bar
+simpleCanvas.buttonBarPosition = BarPosition.VERTICAL_TOP_LEFT  // align buttons to vertical top left
+simpleCanvas.undo()                                             // undo last action
+simplecanvas.clear()                                            // clear canvas
+```
+
+### XML-Attributes
 |attribute|format|default|description|
 |---|---|---|---|
 |`app:image_src`|reference|0|resource of background image|
@@ -73,7 +95,7 @@ Step 2. Add the dependency:
 |`app:color_seek_bar_position`|enum|VERTICAL_TOP_RIGHT|position of color seek bar|
 |`app:button_bar_position`|enum|HORIZONTAL_TOP_RIGHT|position of buttons|
 
-### Kotlin Properties
+### Kotlin-Properties
 |property|type|access|description|
 |---|---|---|---|
 |`pathCount`|Int|GET|number of lines on canvas|
@@ -100,7 +122,7 @@ Step 2. Add the dependency:
 ### Public Methods
 |method|description|
 |---|---|
-|`undo()`|undo last action|
+|`undo()`|undo last action (including clear)|
 |`clear()`|clear canvas|
 |`drawPath(path: Path, paint: Paint, considerWhenUndo: Boolean`)|draw path to canvas<br/>specify if it is considered when calling undo()|
 |`drawCircle(x: Float, y: Float, radius: Float, paint: Paint, considerWhenUndo: Boolean)`|draw circle to canvas|
