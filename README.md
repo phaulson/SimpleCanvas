@@ -18,3 +18,13 @@ Step 2. Add the dependency:
 ```
 implementation 'com.github.phaulson:SimpleCanvas:v1.0'
 ```
+
+##  Usage
+
+XML
+```xml
+<com.phaulson.simplecanvaslib.customView.SimpleCanvas
+        android:id="@+id/simpleCanvas"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+```
