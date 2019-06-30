@@ -78,7 +78,7 @@ simpleCanvas.showColorSeekBar = false                           // hide color se
 simpleCanvas.buttonBarPosition = BarPosition.VERTICAL_TOP_LEFT  // align buttons to vertical top left
 simpleCanvas.undo()                                             // undo last action
 simplecanvas.clear()                                            // clear canvas
-simpleCanvas.drawCircle(300, 250, 25F, paint, false)             // draw circle on canvas
+simpleCanvas.drawCircle(300, 250, 25F, paint, false)            // draw circle on canvas
 ```
 
 ### XML Attributes
