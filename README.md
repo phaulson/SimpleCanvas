@@ -1,5 +1,5 @@
 # SimpleCanvas
-a highly customizable snapchat like canvas
+a highly customizable snapchat like canvas 👻
 
 ## Quick Start
 <a href="https://jitpack.io/#phaulson/SimpleCanvas">![Release](https://jitpack.io/v/phaulson/SimpleCanvas.svg)</a>
