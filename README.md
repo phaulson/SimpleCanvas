@@ -52,6 +52,7 @@ Step 2. Add the dependency:
 ##  Usage
 
 ### XML
+For a detailed description of attributes see [XML Attributes](#XML-Attributes)
 ```xml
 <com.phaulson.simplecanvaslib.customView.SimpleCanvas
         android:id="@+id/simpleCanvas"
@@ -71,6 +72,7 @@ simpleCanvas.showColorSeekBar = false                           // hide color se
 simpleCanvas.buttonBarPosition = BarPosition.VERTICAL_TOP_LEFT  // align buttons to vertical top left
 simpleCanvas.undo()                                             // undo last action
 simplecanvas.clear()                                            // clear canvas
+simpleCanvas.rawCircle(300, 250, 25F, paint, false)             // draw circle on canvas
 ```
 
 ### XML Attributes
