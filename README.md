@@ -102,7 +102,7 @@ Step 2. Add the dependency:
 |---|---|
 |`undo()`|undo last action|
 |`clear()`|clear canvas|
-|`drawPath(path: Path, paint: Paint, considerWhenUndo: Boolean = true`)|draw path to canvas<br/>specify if it is considered when calling undo()|
-|`drawCircle(x: Float, y: Float, radius: Float, paint: Paint, considerWhenUndo: Boolean = true)`|draw circle to canvas|
+|`drawPath(path: Path, paint: Paint, considerWhenUndo: Boolean`)|draw path to canvas<br/>specify if it is considered when calling undo()|
+|`drawCircle(x: Float, y: Float, radius: Float, paint: Paint, considerWhenUndo: Boolean)`|draw circle to canvas|
 |`erasePath(index: Int)`|erase path at given index|
 |`setColorSeekBarColors(res: Int/IntArray)`|set new resource of colors to color seek bar|
